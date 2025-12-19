@@ -1,0 +1,204 @@
+:root{
+    --main-color : rgb(13, 147, 209);
+    --bgc:#1f1f1fe0;
+}
+.header { 
+    display: flex;
+    padding : 0 20px ;
+    background-color: var(--bgc);
+}
+.parent { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.body{
+    flex-basis: 80%;
+}
+.container:first-of-type{ 
+    display: flex;
+    margin : 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-left : 10px;
+    padding-right : 10px;
+    width :  100% ; 
+    flex-wrap: wrap;
+}
+nav{
+    flex-basis: 80%;
+}
+img { 
+    width : 80px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+a{
+    display: flex;
+
+}
+a div{
+    margin-top : -20px;
+    margin-left : 10px;
+}
+a div p {
+    font-size : 10px;
+}
+a{
+    text-decoration: none;
+    color : #fff;
+}
+nav ul { 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+nav ul{ 
+    list-style-type: none;
+    width : 90%;
+}
+nav ul li { 
+    padding : 10px 20px;
+    width : auto;
+    height : 20px;
+    border-radius: 20px;
+    display: inline-block;
+    color : #fff ;
+    margin-left  : 20px;
+    border: 1px solid transparent;
+}
+li.active { 
+    border : 1px solid var(--main-color);
+    color : var(--main-color);
+}
+li:hover{ 
+    color : var(--main-color);
+    border : 1px solid var(--main-color);
+}
+.body{
+    background-image: url(bk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.body .container{
+    margin: 20px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.inp { 
+    width: 95%;
+}
+.inp input{ 
+    width : 90%;
+    padding : 20px;
+    border-radius: 25px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bgc);
+    outline: none;
+    color : #fff;
+}
+.body .container span{
+    position: absolute;
+    top:20%;
+    left : 81%;
+    display: block;
+    color : #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.footer{
+    background-color: var(--bgc);
+    width: 100%;
+}
+.footer .container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.footer  .subscribe{
+    width : 100%;
+    position:relative;
+}
+.footer input{
+    color : white;
+    width : 80%;
+    padding : 20px;
+    background-color: var(--bgc);
+    border-radius: 20px;
+    border:1px solid var(--main-color);
+}
+.footer span{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    color : white;
+    padding : 10px;
+    border : 1px solid var(--main-color);
+    border-radius: 20px;
+}
+.footer .icons{
+    display: flex;
+    gap: 20px;
+}
+.footer .icons .fa{
+    font-size: 20px;
+}
+.fa:hover{
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px)   {
+    .container:first-of-type a{
+        width: 100%;
+    }   
+    .container:first-of-type nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .container:first-of-type nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+.ele-display { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.ele-display .ele { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.ele-display .first-ele{ 
+    align-items: start;
+}
+.first-ele .data{ 
+    display: flex;
+    width : 90% ;
+    justify-content: space-between;
+}
+.first-ele h2 { 
+    font-size: 2em;
+    color : #f1e9e9;
+}
+.first-ele .temperature { 
+    display: flex;
+    gap: 20px;
+}
+.first-ele h3 { 
+    font-size : 0.5em ;
+    color : var(--main-color);
+}
+.first-ele .modes {
+    display: flex;
+    gap: 20px;
+}

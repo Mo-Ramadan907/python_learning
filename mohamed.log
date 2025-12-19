@@ -1,0 +1,11 @@
+2025-07-14 22:50:18,087 - INFO - hello mohamed 
+2025-07-14 22:50:18,087 - DEBUG - hello yousseff 
+2025-07-14 22:50:18,087 - WARNING - that's enough 
+2025-07-14 22:50:18,088 - ERROR - that's my error  
+2025-07-14 22:50:18,088 - CRITICAL - that's my critical  
+2025-07-14 22:50:18,088 - ERROR - this error occured  
+Traceback (most recent call last):
+  File "/home/mo/Projects/pythonProjects/mylogging.py", line 47, in <module>
+    x = 1 //0
+       ~~^^~
+ZeroDivisionError: integer division or modulo by zero
